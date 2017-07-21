@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jimihua.work.PlayPage"
+
+    >
+    
+    <jimihua.work.PlayPage_LeftMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg2"
+            >
+
+        <include layout="@layout/activity_play_page_left"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg">
+
+                <TextView
+                    android:layout_marginTop="10px"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="欲于辉夜城起舞"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/play_page_songName"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- u's"
+                    android:textSize="18dp"
+                    android:layout_below="@+id/play_page_songName"
+                    android:paddingLeft="260dp"
+                    android:id="@+id/play_page_singerName"/>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/play_border"
+                    android:layout_below="@id/play_page_singerName"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/play_page_picture"/>
+
+                <jimihua.view.impl.LrcView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/play_page_picture"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/geci"
+                    />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:layout_below="@+id/geci"
+                    android:id="@+id/play_page_seekbar"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:layout_below="@+id/play_page_seekbar"
+                    android:layout_centerHorizontal="true">
+
+                    <!--<ImageButton-->
+                        <!--android:layout_width="100px"-->
+                        <!--android:paddingTop="20dp"-->
+                        <!--android:layout_height="100px"-->
+                        <!--android:background="@drawable/touxiang"/>-->
+
+
+                    <ImageView
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="130px"
+                        android:layout_height="147px"
+                        android:src="@drawable/previous"
+                        android:id="@+id/homepage_qian_music"/>
+
+                    <!--前一首歌-->
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="147px"
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/homepage_bofang_music"
+                        android:src="@drawable/pause" />
+                    <!--暂停、开始-->
+
+                    <ImageView
+                        android:layout_width="130px"
+                        android:layout_height="147px"
+                        android:layout_marginLeft="35dp"
+                        android:src="@drawable/next"
+                        android:id="@+id/homepage_hou_music"/>
+                    <!--下一首歌-->
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </jimihua.work.PlayPage_LeftMenu>
+    
+</RelativeLayout>

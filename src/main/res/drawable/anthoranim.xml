@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/chat_record_len_right"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/chat_record_len_center"
+        android:duration="300"/>
+    <item
+        android:drawable="@drawable/chat_record_len_left"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/chat_record_len_center"
+        android:duration="300"/>
+
+</animation-list>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Work</string>
+    <string name="title_activity_music_list">music_list</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_changepassword">changepassword</string>
+    <string name="title_activity_searchpassword">searchpassword</string>
+    <string name="title_activity_like_musiclist">like_musiclist</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="jimihua.work.HomePage">
+
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CC0000">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:id="@+id/home_page_left"
+            android:background="@drawable/caidan"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PicturePlay"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/up"
+        android:layout_height="230dp">
+
+    </RelativeLayout>
+    <!--这个是提供浏览的图片-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/PicturePlay"
+        android:id="@+id/sangeanniu"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bendi"
+            android:background="@drawable/bendi"
+            />
+        <!--本地-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:id="@+id/woxihuan"
+            android:src="@drawable/like"/>
+        <!--我喜欢-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/luyin"
+            android:background="@drawable/saomiao" />
+        <!--luyin-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/sangeanniu"
+        android:id="@+id/guanggao"
+        android:background="@drawable/ad"
+        />
+    <!--广告-->
+<ImageView
+    android:id="@+id/xian"
+    android:layout_below="@id/guanggao"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="20dp"
+    android:background="#bd0100"/>
+
+    <!--下面的是 显示播放歌曲-->
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:layout_below="@+id/xian"
+        android:layout_marginTop="3dp"
+        android:id="@+id/goto_playpage"
+        android:clickable="true"
+    android:paddingLeft="25px">
+
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="4px"
+        android:background="@drawable/touxiang"/>
+    <!--歌曲图片-->
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:paddingLeft="30px"
+        android:paddingTop="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/homepage_songName"
+            android:text="欲于辉夜城起舞"
+            android:textSize="50px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/homepage_singer"
+            android:layout_below="@+id/homepage_songName"
+            android:text="u's"
+            android:textSize="30px"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="170px"
+        android:layout_height="197px"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/playbar_btn_up"
+        android:id="@+id/homepage_btn_qian"/>
+    <!--前一首歌-->
+
+    <ImageView
+        android:layout_width="170px"
+        android:layout_height="197px"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/homepage_btn_bofang"
+        android:src="@drawable/playbar_btn_play"/>
+    <!--暂停、开始-->
+
+    <ImageView
+        android:layout_width="170px"
+        android:layout_height="197px"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/playbar_btn_next"
+        android:id="@+id/homepage_btn_hou"/>
+    <!--下一首歌-->
+
+</LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/xian2"
+        android:layout_below="@id/goto_playpage"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="6dp"
+        android:background="#bd0100"/>
+</RelativeLayout>
